@@ -1,6 +1,6 @@
 import hudson.plugins.git.*;
 
-def scm = new GitSCM("https://github.com/Srk-771/Web-App.git")
+def scm = new GitSCM("https://github.com/Srk-771/Sample-Application.git")
 scm.branches = [new BranchSpec("master")];
 
 def flowDefinition = new org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition(scm, "Jenkinsfile-build.groovy")
