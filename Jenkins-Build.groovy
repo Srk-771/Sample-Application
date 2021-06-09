@@ -4,10 +4,10 @@ node() {
         git url: 'https://github.com/Srk-771/Sample-Application.git'
     }
     stage('pollscm') {
-        git poll: '* * * * *'
+        pollSCM: '* * * * *'
     }
     stage('maven build') {
-        sh 'mvn pom.xml clean install'
+        sh 'mvn clean install'
         sh 'pwd'
 
     }
