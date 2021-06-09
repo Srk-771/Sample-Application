@@ -1,0 +1,71 @@
+body{
+	font-family: 'Lucida Grande', 'Helvetica', sans-serif;
+	background-image:url(../images/img2.jpg) ;
+	height: 100%;
+
+	/* Center and scale the image nicely */
+	background-position: center stretch;
+	background-repeat: no-repeat ;
+	background-size: cover;
+}
+.WebContainer{
+	width: 100%;
+	min-width:1000px;
+    height: auto;
+}
+#newNoteButton{
+	font-size:20px;
+	padding:12px;
+	border-radius:5px;
+	background:grey;
+	color:white;
+	border:0;
+}
+
+#newNoteButton:hover{
+	background:grey;
+	color:skyblue;
+}
+
+.note{
+	background-color: whitesmoke;
+	height:250px;
+	width:200px;
+	padding:15px;
+	position:absolute;
+	font-size:16px;
+	-webkit-box-shadow:1px 7px 15px rgba(0,0,0,0.5);
+	box-shadow:1px 7px 15px rgba(0,0,0,0.5);
+}
+
+.note:hover .closebutton{
+	display:block;
+}
+
+.closebutton{
+	display:none;
+	background-image:url(../images/remove.png);
+	height:30px;
+	width:30px;
+	position:absolute;
+	left:-15px;
+	top:-15px;
+}
+
+.closebutton:active{
+	background-image:url(../images/remove_pushed.png);
+}
+
+.timestamp{
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	font-size:13px;
+	background-color:black;
+	color:white;
+	border-top:1px solid #a80;
+	padding:3px 5px;
+	text-align:center;
+	
+}
