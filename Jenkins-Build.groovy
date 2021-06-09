@@ -1,5 +1,5 @@
 node() {
-    }
+    
     stage('git clone') {
         git url: 'https://github.com/Srk-771/Sample-Application.git'
     }
