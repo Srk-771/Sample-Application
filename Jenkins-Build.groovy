@@ -4,7 +4,7 @@ node() {
         git url: 'https://github.com/Srk-771/Sample-Application.git'
     }
     stage('pollscm') {
-        pollSCM: '* * * * *'
+        cron: ('* * * * *')
     }
     stage('maven build') {
         sh 'mvn clean install'
